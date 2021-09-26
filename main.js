@@ -67,3 +67,5 @@ contenedorDeTexto = document.getElementById("texto-js");
 textoCompleto = contenedorDeTexto.innerHTML;
 textoEscrito = "";
 banderaEscribiendoTexto = true;
+
+//
