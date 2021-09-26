@@ -9,44 +9,18 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         </Head>
     <body class="bodyinicio">
-        <header>
-            <nav class="navbar fixed-top navbar-expand-lg ">
-                <div class="container">
-                    <a class="navbar-brand" href="#inicio"><img src="imagenes/repair.svg" alt="" ></a>
-                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse  flex-row-reverse bd-highlight" id="navbarNav">
-                        <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#inicio" >Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#sobreMi">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#proyectos">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
             <section >
                 <div class="inicio container-fluid" id="inicio">
                     <div class="row align-items-start">
-                        <div class="col-xl hola">
+                        <div class="col-md-6 hola">
                             <img src="imagenes/Git.png" width="250" height="250" alt="" />
                             <h1>Bienvenidos a mi porfolio</h1>
                             <h2><span class="palabra" id="palabra">Estudiante</span></h2>
                             <p>"Vive como si fueras a morir mañana, aprende como si fueras a vivir siempre"</p>
-                    
+                    <br>
                     <br>
                         </div>
-                        <div class="sobreMi col-xl" id="sobreMi">
+                        <div class="sobreMi col-md-6" id="sobreMi">
                             <h1>Hola, soy Tomás Soiffer</h1>
                             <div class="type-js headline">
                                 <p class="text-js" id="texto-js">Estudiante de la carrera de Ingeniería en Sistemas de Información en la UTN FRBA. Soy programador autodidacta, sumo experiencia en proyectos propios y realizo cursos en diferentes plataformas para ampliar mis conocimientos. Busco dar mis primeros pasos en el mundo de la programación.</p>
@@ -54,7 +28,7 @@
                             <br>        
                         </div>
                     </div>
-                    <div class="row align-items-start habilidades">
+                    <div class=" align-items-start habilidades">
                         <div class="slider">
                             <div class="slide-track">
                                 <div class="slide">
@@ -116,30 +90,29 @@
                     <div class="card" style="width: 20rem;">
                         <img src="imagenes/PastilleroMasMedicones.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Pastillero y Medicones</h5>
-                            <p class="card-text">una pagina pensada para que se puedan guardar las mediciones de la gente que diariamente se mide la glucemia y la presión y además pueda almacenar los medicamentos que toma. Se puso en practica el use de local Storage y Vanlia Js.</p>
-                            <a href="https://tsoiffer.github.io/PastilleroMasMedicones/" class="btn btn-primary" target="_blank">Mira la Pagina</a>
-                            <a href="https://github.com/Tsoiffer/PastilleroMasMedicones/" class="btn btn-secondary" target="_blank">Mira El Codigo</a>
+                            <h5 class="card-title">Pastillero y Mediciones</h5>
+                            <p class="card-text">Una página pensada para que se puedan guardar las mediciones que la gente diariamente se toma, la glucemia, la presión y además pueda almacenar los medicamentos que toma. Se puso en práctica el uso de Local Storage y Vanilla Js.</p>
+                            <a href="https://tsoiffer.github.io/PastilleroMasMedicones/" class="btn btn-primary" target="_blank">Página</a>
+                            <a href="https://github.com/Tsoiffer/PastilleroMasMedicones/" class="btn btn-secondary" target="_blank">Código</a>
                         </div>
                         </div>
                         <div class="card" style="width: 20rem;">
                             <img src="imagenes/tiendaSeCompras.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Tienda de Compras</h5>
-                                <p class="card-text">una tienda hecha solo con vanila jS Se puso en practica el consumir una API para realizar un ecommerce.</p>
+                                <p class="card-text">Una tienda hecha solo con Vanilla Js. Se puso en práctica el consumo de API para realizar un e-commerce.</p>
                                 
-                                <a href="https://tsoiffer.github.io/tiendaSeCompras/" class="btn btn-primary" target="_blank">Mira la Pagina</a>
-                                <a href="https://github.com/Tsoiffer/tiendaSeCompras/" class="btn btn-secondary" target="_blank">Mira El Codigo</a>
-                                
+                                <a href="https://tsoiffer.github.io/tiendaSeCompras/" class="btn btn-primary" target="_blank">Página</a>
+                                <a href="https://github.com/Tsoiffer/tiendaSeCompras/" class="btn btn-secondary" target="_blank">Código</a> 
                             </div>
                         </div>
                         <div class="card" style="width: 20rem;">
                             <img src="imagenes/oraculoJs.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">oraculoJs</h5>
-                                <p class="card-text">Un juego realizado con JavaScript en el cual ingresas 2 jugadores y te informa su destino con las runas Vikingas y te dice si hacen Match.</p>
-                                <a href="https://tsoiffer.github.io/oraculoJs/" class="btn btn-primary" target="_blank">Mira la Pagina</a>
-                                <a href="https://github.com/Tsoiffer/oraculoJs" class="btn btn-secondary" target="_blank">Mira El Codigo</a>
+                                <h5 class="card-title">Oráculo Js</h5>
+                                <p class="card-text">Un juego realizado con JavaScript de 2 jugadores donde te informa su destino con las runas vikingas y te dice si hacen Match.</p>
+                                <a href="https://tsoiffer.github.io/oraculoJs/" class="btn btn-primary" target="_blank">Página</a>
+                                <a href="https://github.com/Tsoiffer/oraculoJs" class="btn btn-secondary" target="_blank">Código</a>
                             </div>
                         </div>
                     </div>
@@ -148,27 +121,27 @@
                             <img src="imagenes/ListaDeCompras.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Lista de Compras</h5>
-                            <p class="card-text">Pagina que busca representar una lista de compras solo con Javascript y el uso de boostrap para realizar un diseño movile first que cambia al usarse en una computadora.</p>
-                            <a href="https://tsoiffer.github.io/ListaDeCompras/" class="btn btn-primary" target="_blank">Mira la Pagina</a>
-                            <a href="https://github.com/Tsoiffer/ListaDeCompras" class="btn btn-secondary" target="_blank">Mira El Codigo</a>
+                            <p class="card-text">Página que busca representar una lista de compras solo con JavaScript y el uso de Boostrap para realizar un diseño mobile first que cambia al usarse en una computadora.</p>
+                            <a href="https://tsoiffer.github.io/ListaDeCompras/" class="btn btn-primary" target="_blank">Página</a>
+                            <a href="https://github.com/Tsoiffer/ListaDeCompras" class="btn btn-secondary" target="_blank">Código</a>
                         </div>
                             </div>
                             <div class="card" style="width: 20rem;">
                                 <img src="imagenes/elPodcastQueQueremos.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">El Podcast Que Queremos</h5>
-                                    <p class="card-text">Pagina realizada para el ciclo de podcast llamado "EL PODCAST QUE QUEREMOS". Es una pagina en la cual trate poner en practica lo basico de html, distintas etiquetas, poder encontrar un diseño que se acople al podcast y realizar una pagina responsive con flex box.</p>
-                                    <a href="https://tsoiffer.github.io/elPodcastQueQueremos/" class="btn btn-primary" target="_blank">Mira la Pagina</a>
-                                    <a href="https://github.com/Tsoiffer/elPodcastQueQueremos" class="btn btn-secondary" target="_blank">Mira El Codigo</a>
+                                    <p class="card-text">Página realizada para el ciclo de podcast llamado "EL PODCAST QUE QUEREMOS". Se trata de poner en práctica lo básico de HTML, distintas etiquetas, poder encontrar un diseño que se acople al podcast responsive con flex box.</p>
+                                    <a href="https://tsoiffer.github.io/elPodcastQueQueremos/" class="btn btn-primary" target="_blank">Página</a>
+                                    <a href="https://github.com/Tsoiffer/elPodcastQueQueremos" class="btn btn-secondary" target="_blank">Código</a>
                                 </div>
                             </div>
                             <div class="card" style="width: 20rem;">
                                 <img src="imagenes/Mandolin.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Mandolin</h5>
-                                    <p class="card-text">Pagina en la cual se puede escuchar la canción mandolín de Gustavo Pena y leer su letra. En este proyecto puse en práctica el conocimiento básico de HTML5 y css sumando los metadatos de la canción para que se pueda compartir tmb en facebook y twitter con su foto y descripción.</p>
-                                    <a href="https://tsoiffer.github.io/Mandolin/" class="btn btn-primary" target="_blank">Mira la Pagina</a>
-                                    <a href="https://github.com/Tsoiffer/Mandolin" class="btn btn-secondary" target="_blank">Mira El Codigo</a>
+                                    <h5 class="card-title">Mandolín</h5>
+                                    <p class="card-text">Página en la cual se puede escuchar la canción Mandolín de Gustavo Pena y ver su letra. En este proyecto puse en práctica el conocimiento básico de HTML5 y CSS sumando los metadatos de la canción para que se pueda compartir también en Facebook y Twitter con su foto y descripción.</p>
+                                    <a href="https://tsoiffer.github.io/Mandolin/" class="btn btn-primary" target="_blank">Página</a>
+                                    <a href="https://github.com/Tsoiffer/Mandolin" class="btn btn-secondary" target="_blank">Código</a>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +149,7 @@
                 
             </section>
             <footer>
-                <div class="container ">
+                <div class="container">
                    <a href="https://github.com/Tsoiffer" target="_blank" ><img src="imagenes/github.svg" class="svg-inject" alt="" ></a>
                     <a href="https://www.linkedin.com/in/tomas-soiffer-0b6138146/" target="_blank"><img src="imagenes/linkedin.svg" alt=""></a>
                     <a href="mailto:tias0708@hotmail.com" target="_blank"><img src="imagenes/correo-electronico.svg" alt=""></a>
