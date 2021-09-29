@@ -22,6 +22,7 @@ body {
 	width: 100%;
 	margin: auto;
 }
+/*Preload*/
 .hidden {
 	overflow: hidden;
 }
@@ -117,13 +118,14 @@ body {
 		transform: rotate(360deg);
 	}
 }
+/*Preload FIN*/
 section {
 	min-height: 100vh;
 	width: 100%;
 }
 .inicio {
 	min-height: 93vh;
-	background-color: #494a61;
+	background: linear-gradient(to right, #1e1e1e, #333333);
 }
 .inicio H3,
 p {
@@ -149,6 +151,7 @@ p {
 }
 .hola h1 {
 	font-family: "Ubuntu", sans-serif;
+	color: #c8aa8c;
 }
 .sobreMi {
 	min-height: 40vh;
@@ -158,6 +161,9 @@ p {
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 200;
 	margin-right: 10vw;
+}
+.sobreMi H1 {
+	color: #c8aa8c;
 }
 .habilidades {
 	margin-top: 0vh;
@@ -170,7 +176,7 @@ p {
 .proyectos {
 	padding-top: 8vh;
 	height: 100%;
-	background-color: aliceblue;
+	background-color: white;
 	text-align: center;
 	padding-bottom: 10vh;
 }
@@ -183,18 +189,23 @@ footer {
 	text-align: center;
 	position: fixed;
 	bottom: 0;
-	background-color: rgba(129, 125, 125, 0.3);
+	background-color: #c8aa8c;
 	z-index: 3;
 }
 footer a img {
 	width: 5vh;
 	margin-top: 1vh;
-	margin-left: 0.5vh;
-	margin-right: 0.5vh;
+	margin-left: 4vh;
+	margin-right: 4vh;
+	transition: 0.2s;
+	filter: invert(0%) sepia(2%) saturate(5467%) hue-rotate(218deg)
+		brightness(94%) contrast(92%);
 }
 footer a :hover {
 	width: 6vh;
-	margin: 0vh;
+	margin-right: 3.5vh;
+	margin-left: 3.5vh;
+	margin-top: 0;
 	transition: 0.2s;
 }
 
@@ -202,7 +213,14 @@ footer a :hover {
 	margin-left: 0.5vw;
 	margin-right: 0.5vw;
 	margin-top: 2vh;
-	background-color: #494a61;
+	background-color: #333;
+}
+.card :focus-visible {
+	transition: 3.9s;
+}
+.card:hover {
+	background-color: rgba(51, 51, 51, 0.8);
+	transition: 0.2s;
 }
 .card p {
 	font-family: "Ubuntu", sans-serif;
@@ -235,12 +253,12 @@ footer a :hover {
 	border-color: #0d6efd;
 }
 .card .btn-primary:hover {
-	background-color: #6c757d;
-	border-color: #6c757d;
+	background-color: #333;
+	border-color: #333;
 }
 .card .btn-secondary:hover {
-	background-color: #6c757d;
-	border-color: #6c757d;
+	background-color: #333;
+	border-color: #333;
 }
 
 /* diseño animacion texto que se escribe */
@@ -291,7 +309,6 @@ footer a :hover {
 	}
 }
 .slider {
-	background: #494a61;
 	height: 100px;
 	margin: auto;
 	overflow: hidden;
@@ -302,7 +319,7 @@ footer a :hover {
 .slider::after {
 	background: linear-gradient(
 		to right,
-		#494a61 0%,
+		#1e1e1e 0%,
 		rgba(255, 255, 255, 0) 100%
 	);
 	content: "";
@@ -315,6 +332,11 @@ footer a :hover {
 	right: 0;
 	top: 0;
 	transform: rotateZ(180deg);
+	background: linear-gradient(
+		to right,
+		#333333 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
 }
 .slider::before {
 	left: 0;
@@ -387,4 +409,16 @@ footer a :hover {
 
 .postArrow {
 	height: 50px;
+}
+
+/*efecto scroll*/
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+.fadeTop {
+	opacity: 0;
+	transform: translate(0, 10vh);
+	transition: all 1s;
+}
+.visible {
+	opacity: 1;
+	transform: translate(0, 0);
 }
