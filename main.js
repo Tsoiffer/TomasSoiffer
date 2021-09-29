@@ -1,13 +1,13 @@
-var palabras = ["Estudiante", "Desarrollador", "Otros"];
+var palabras = ["Estudiante", "Desarrollador", "Más"];
 contenedorDePalabra = document.getElementById("palabra");
 palabraEscrita = contenedorDePalabra.innerHTML;
 banderaEscribiendoPalabra = false;
 contador = 1;
-banderaRelantizar = 10;
+banderaRelantizar = 4;
 
 setInterval(function () {
 	escribirTexto();
-	if (banderaRelantizar == 10) {
+	if (banderaRelantizar == 4) {
 		borrarPalabra();
 		escribirPalabra();
 		banderaRelantizar = 0;
@@ -19,7 +19,7 @@ setInterval(function () {
 	if (contador == palabras.length) {
 		contador = 0;
 	}
-}, 35);
+}, 23);
 
 function borrarPalabra() {
 	if (palabraEscrita.length > 0 && !banderaEscribiendoPalabra) {
@@ -69,3 +69,10 @@ textoEscrito = "";
 banderaEscribiendoTexto = true;
 
 //
+
+//Preloader
+
+window.onload = function () {
+	$("#onload").fadeOut();
+	$("body").removeClass("hidden");
+};
