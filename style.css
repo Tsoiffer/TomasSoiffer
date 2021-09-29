@@ -17,11 +17,105 @@ Text #ffffff
 	padding: 0;
 	border: 0;
 }
-
 body {
 	min-height: 100vh;
 	width: 100%;
 	margin: auto;
+}
+.hidden {
+	overflow: hidden;
+}
+.center {
+	height: 100vh;
+	background-color: #494a61;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+.lds-roller {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.lds-roller div {
+	animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: white;
+	margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+	animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+	top: 63px;
+	left: 63px;
+}
+.lds-roller div:nth-child(2) {
+	animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+	top: 68px;
+	left: 56px;
+}
+.lds-roller div:nth-child(3) {
+	animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+	top: 71px;
+	left: 48px;
+}
+.lds-roller div:nth-child(4) {
+	animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+	top: 72px;
+	left: 40px;
+}
+.lds-roller div:nth-child(5) {
+	animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+	top: 71px;
+	left: 32px;
+}
+.lds-roller div:nth-child(6) {
+	animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+	top: 68px;
+	left: 24px;
+}
+.lds-roller div:nth-child(7) {
+	animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+	top: 63px;
+	left: 17px;
+}
+.lds-roller div:nth-child(8) {
+	animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+	top: 56px;
+	left: 12px;
+}
+@keyframes lds-roller {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 section {
 	min-height: 100vh;
@@ -31,9 +125,12 @@ section {
 	min-height: 93vh;
 	background-color: #494a61;
 }
-.inicio H1,
-H3,
+.inicio H3,
 p {
+	color: white;
+}
+.inicio H1 {
+	font-family: "Ubuntu", sans-serif;
 	color: white;
 }
 .inicio .row {
@@ -45,11 +142,21 @@ p {
 	height: 65vh;
 	text-align: center;
 }
+.hola p {
+	font-size: 20px;
+	font-family: "Ubuntu", sans-serif;
+	font-style: oblique;
+}
+.hola h1 {
+	font-family: "Ubuntu", sans-serif;
+}
 .sobreMi {
 	min-height: 40vh;
 	padding-top: 34vh;
 }
 .sobreMi p {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 200;
 	margin-right: 10vw;
 }
 .habilidades {
@@ -67,7 +174,9 @@ p {
 	text-align: center;
 	padding-bottom: 10vh;
 }
-
+.proyectos H1 {
+	font-family: "Ubuntu", sans-serif;
+}
 footer {
 	height: 7vh;
 	width: 100%;
@@ -75,6 +184,7 @@ footer {
 	position: fixed;
 	bottom: 0;
 	background-color: rgba(129, 125, 125, 0.3);
+	z-index: 3;
 }
 footer a img {
 	width: 5vh;
@@ -92,10 +202,17 @@ footer a :hover {
 	margin-left: 0.5vw;
 	margin-right: 0.5vw;
 	margin-top: 2vh;
+	background-color: #494a61;
 }
 .card p {
-	color: black;
+	font-family: "Ubuntu", sans-serif;
+	color: white;
 	margin-bottom: 45px;
+}
+.card h5 {
+	font-family: "Ubuntu", sans-serif;
+	color: white;
+	font-size: 24px;
 }
 .card img {
 	margin-top: 15px;
@@ -103,6 +220,7 @@ footer a :hover {
 	width: 100%;
 }
 .card .btn-primary {
+	font-family: "Ubuntu", sans-serif;
 	position: absolute;
 	bottom: 8px;
 	left: 25%;

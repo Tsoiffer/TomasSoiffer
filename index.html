@@ -7,9 +7,24 @@
         <title>Tomas Soiffer</title>
         <meta charset="utf-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"> 
         </Head>
-    <body class="bodyinicio">
-            <section >
+    <body class="hidden">
+        <div class="center" id="onload">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+            <section>
                 <div class="inicio container-fluid" id="inicio">
                     <div class="row align-items-start">
                         <div class="col-md-6 hola">
@@ -91,7 +106,7 @@
                         <img src="imagenes/PastilleroMasMedicones.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Pastillero y Mediciones</h5>
-                            <p class="card-text">Una página pensada para que se puedan guardar las mediciones que la gente diariamente se toma, la glucemia, la presión y además pueda almacenar los medicamentos que toma. Se puso en práctica el uso de Local Storage y Vanilla Js.</p>
+                            <p class="card-text">Pensada para que se puedan guardar las mediciones que la gente diariamente se toma, la glucemia, la presión y además pueda almacenar los medicamentos que toma. Se puso en práctica el uso de Local Storage y Vanilla Js.</p>
                             <a href="https://tsoiffer.github.io/PastilleroMasMedicones/" class="btn btn-primary" target="_blank">Página</a>
                             <a href="https://github.com/Tsoiffer/PastilleroMasMedicones/" class="btn btn-secondary" target="_blank">Código</a>
                         </div>
@@ -119,7 +134,7 @@
                             <img src="imagenes/ListaDeCompras.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Lista de Compras</h5>
-                            <p class="card-text">Página que busca representar una lista de compras solo con JavaScript y el uso de Boostrap para realizar un diseño mobile first que cambia al usarse en una computadora.</p>
+                            <p class="card-text">Busca representar una lista de compras solo con JavaScript y el uso de Boostrap para realizar un diseño mobile first que cambia al usarse en una computadora.</p>
                             <a href="https://tsoiffer.github.io/ListaDeCompras/" class="btn btn-primary" target="_blank">Página</a>
                             <a href="https://github.com/Tsoiffer/ListaDeCompras" class="btn btn-secondary" target="_blank">Código</a>
                         </div>
@@ -140,7 +155,7 @@
                                 <img src="imagenes/Mandolin.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Mandolín</h5>
-                                    <p class="card-text">Página en la cual se puede escuchar la canción Mandolín de Gustavo Pena y ver su letra. En este proyecto puse en práctica el conocimiento básico de HTML5 y CSS sumando los metadatos de la canción para que se pueda compartir también en Facebook y Twitter con su foto y descripción.</p>
+                                    <p class="card-text">Se puede escuchar la canción Mandolín de Gustavo Pena y ver su letra. En este proyecto puse en práctica el conocimiento básico de HTML5 y CSS sumando los metadatos de la canción para que se pueda compartir también en Facebook y Twitter con su foto y descripción.</p>
                                     <a href="https://tsoiffer.github.io/Mandolin/" class="btn btn-primary" target="_blank">Página</a>
                                     <a href="https://github.com/Tsoiffer/Mandolin" class="btn btn-secondary" target="_blank">Código</a>
                                 </div>
@@ -149,18 +164,18 @@
                                 <img src="imagenes/tsoifferchat.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">TSoiffer Chat</h5>
-                                <p class="card-text">Página que busca representar un chat con una base de datos en tiempo real utilizando Firebase para la autentificación y para el Hosting.</p>
+                                <p class="card-text">Busca representar un chat con una base de datos en tiempo real utilizando Firebase para la autentificación y para el Hosting.</p>
                                 <a href="https://tsoifferchat.web.app/" class="btn btn-primary" target="_blank">Página</a>
-                                <a href="" class="btn btn-secondary" target="_blank">Código</a>
+                                <a href="https://github.com/Tsoiffer/tsoifferChat" class="btn btn-secondary" target="_blank">Código</a>
                             </div>
                             </div>
                             <div class="card" style="width: 20rem;">
                                 <img src="imagenes/tsoiffergram.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">TsoifferGram </h5>
-                                <p class="card-text">Página que busca representar algunas funciones de la pagina Instagram utilizando Firebase para la base de datos en tiempo real, para la autentificaciónl del ingreso con google y para el Hosting.</p>
+                                <p class="card-text">Representa algunas funciones de la red social Instagram utilizando Firebase para la base de datos en tiempo real, para la autentificación del ingreso con Google y para el Hosting.</p>
                                 <a href="https://tsoiffergram.web.app/" class="btn btn-primary" target="_blank">Página</a>
-                                <a href="" class="btn btn-secondary" target="_blank">Código</a>
+                                <a href="https://github.com/Tsoiffer/tsoifferGram" class="btn btn-secondary" target="_blank">Código</a>
                             </div>
                             </div>
                         </div>
@@ -168,15 +183,14 @@
                 
             </section>
             <footer>
-                <div class="container">
                     <a href="https://github.com/Tsoiffer" target="_blank" ><img src="imagenes/github.svg" class="svg-inject" alt="" ></a>
                     <a href="https://www.linkedin.com/in/tomas-soiffer-0b6138146/" target="_blank"><img src="imagenes/linkedin.svg" alt=""></a>
                     <a href="mailto:tias0708@hotmail.com" target="_blank"><img src="imagenes/correo-electronico.svg" alt=""></a>
                     <a href="https://drive.google.com/file/d/1X7dA2PlqYIeQH8GujJ83812lQUp9bMsg/view?usp=sharing" target="_blank"><img src="imagenes/cv.svg" alt=""></a>
-                </div>
             </footer>
             <script src="main.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
             <link rel="stylesheet" href="style.css">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </body>
 </html>
