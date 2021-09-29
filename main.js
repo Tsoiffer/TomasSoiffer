@@ -1,4 +1,4 @@
-var palabras = ["Estudiante", "Desarrollador", "Más"];
+var palabras = ["Estudiante ", "Desarrollador ", "Más "];
 contenedorDePalabra = document.getElementById("palabra");
 palabraEscrita = contenedorDePalabra.innerHTML;
 banderaEscribiendoPalabra = false;

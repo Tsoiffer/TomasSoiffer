@@ -245,7 +245,8 @@ footer a :hover {
 
 /* diseño animacion texto que se escribe */
 .palabra {
-	font-family: "Roboto Mono", monospace;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 200;
 	background-color: white;
 	height: 1.4em;
 	padding: 0 14px 0 7px;
