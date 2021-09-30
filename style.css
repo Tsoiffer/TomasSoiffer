@@ -32,11 +32,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 9999;
 }
 .lds-roller {
 	display: inline-block;
 	position: relative;
+	z-index: 9999 !important;
 	width: 80px;
 	height: 80px;
 }
@@ -136,13 +136,17 @@ p {
 	color: white;
 }
 .inicio .row {
-	min-height: 65vh;
+	min-height: 70vh;
 }
 .hola {
-	min-height: 40vh;
+	min-height: 30vh;
 	padding-top: 7vh;
-	height: 65vh;
 	text-align: center;
+}
+.hola img {
+	height: 30vh;
+	min-height: 150px;
+	max-height: 250px;
 }
 .hola p {
 	font-size: 20px;
@@ -154,7 +158,7 @@ p {
 	color: #c8aa8c;
 }
 .sobreMi {
-	min-height: 40vh;
+	min-height: 30vh;
 	padding-top: 34vh;
 }
 .sobreMi p {
@@ -165,10 +169,7 @@ p {
 .sobreMi H1 {
 	color: #c8aa8c;
 }
-.habilidades {
-	margin-top: 0vh;
-	min-height: 10vh;
-}
+
 .row {
 	margin-top: 0vh;
 	margin-bottom: 0vh;
@@ -190,7 +191,7 @@ footer {
 	position: fixed;
 	bottom: 0;
 	background-color: #c8aa8c;
-	z-index: 3;
+	z-index: 3 !important;
 }
 footer a img {
 	width: 5vh;
@@ -309,26 +310,30 @@ footer a :hover {
 	}
 }
 .slider {
-	height: 100px;
 	margin: auto;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
+	margin-bottom: 1px;
 }
 .slider::before,
 .slider::after {
+	padding-left: 0;
+	margin-left: 0;
 	background: linear-gradient(
 		to right,
 		#1e1e1e 0%,
 		rgba(255, 255, 255, 0) 100%
 	);
 	content: "";
-	height: 100px;
+	min-height: 13vh;
 	position: absolute;
-	width: 200px;
+	width: 25vw;
 	z-index: 2;
 }
 .slider::after {
+	position: absolute;
+	width: 25vw;
 	right: 0;
 	top: 0;
 	transform: rotateZ(180deg);
@@ -339,6 +344,8 @@ footer a :hover {
 	);
 }
 .slider::before {
+	position: absolute;
+	width: 25vw;
 	left: 0;
 	top: 0;
 }
@@ -349,10 +356,14 @@ footer a :hover {
 	width: calc(250px * 14);
 }
 .slider .slide {
-	height: 100px;
+	height: 11vh;
 	width: 250px;
 }
+.slide img {
+	height: 11vh;
+}
 /*flechita animada*/
+
 .arrow,
 .arrow:before {
 	position: absolute;
@@ -366,6 +377,8 @@ footer a :hover {
 	border-top: none;
 	border-right: 2px #fff solid;
 	border-bottom: 2px #fff solid;
+
+	position: relative;
 }
 
 .arrow:before {
@@ -391,24 +404,9 @@ footer a :hover {
 		transform: translate(-10px, -10px);
 	}
 }
-
-.blackArrow {
-	position: absolute;
-	left: 49%;
-}
-.blackArrow {
-	width: 50px;
-	height: 50px;
-	-webkit-transform: rotate(45deg);
-	border-left: none;
-	border-top: none;
-	border-right: 3px #fff solid;
-	border-bottom: 3px #fff solid;
-	border-color: black;
-}
-
-.postArrow {
-	height: 50px;
+.arrorA {
+	min-height: 10vh;
+	width: 100%;
 }
 
 /*efecto scroll*/
@@ -421,4 +419,68 @@ footer a :hover {
 .visible {
 	opacity: 1;
 	transform: translate(0, 0);
+}
+.invisible {
+	opacity: 0;
+}
+@media (max-width: 420px) {
+	footer a img {
+		width: 5vh;
+		margin-top: 1vh;
+		margin-left: 2vh;
+		margin-right: 2vh;
+		transition: 0.2s;
+		filter: invert(0%) sepia(2%) saturate(5467%) hue-rotate(218deg)
+			brightness(94%) contrast(92%);
+	}
+	footer a :hover {
+		width: 6vh;
+		margin-right: 0.5vh;
+		margin-left: 0.5vh;
+		margin-top: 0;
+		transition: 0.2s;
+	}
+	.arrow,
+	.arrow:before {
+		position: absolute;
+		left: 45%;
+	}
+}
+@media (max-width: 767px) {
+	.sobreMi {
+		padding-top: 3vh;
+		text-align: center;
+	}
+	.sobreMi p {
+		margin: 0;
+	}
+}
+.modal-dialog {
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 100vh;
+}
+.modal-header {
+	padding: 2vh;
+	border-bottom: 0;
+}
+.modal-body {
+	margin: 0;
+	padding: 0;
+	min-height: 85vh;
+	max-height: 98vh;
+}
+iframe {
+	min-height: 85vh;
+	max-height: 90vh;
+}
+.modal-dialog {
+	max-width: 1000px;
+}
+.modal-content {
+	background-color: #c8aa8c;
+}
+.modal-footer {
+	border-top: 0;
+	padding: 0;
 }
