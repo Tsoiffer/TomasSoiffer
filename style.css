@@ -147,6 +147,7 @@ p {
 	height: 30vh;
 	min-height: 150px;
 	max-height: 250px;
+	border-radius: 50%;
 }
 .hola p {
 	font-size: 20px;
