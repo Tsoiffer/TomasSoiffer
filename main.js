@@ -73,6 +73,7 @@ banderaEscribiendoTexto = true;
 //Preloader
 
 window.onload = function () {
+	$("footer").removeClass("invisible");
 	$("#onload").fadeOut();
 	$("body").removeClass("hidden");
 };
